@@ -1,0 +1,57 @@
+/*===================== mobile screen ===================== */
+@media only screen and (min-width: 380px) {
+    .FromContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+  .FromContainer form input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    box-shadow: 0 6px 8px rgb(0, 0, 0, 0.1);
+    font-size: 20px;
+    width: 70%;
+  }
+  .FromContainer form button{
+    padding: 10px;
+    border: none ;
+    background-color: rgb(113, 25, 195);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    width: 20%;
+    
+  }
+  .FromContainer form button:hover{
+    cursor: pointer;
+    
+  }
+}
+/* =========================tablet========================== */
+@media only screen and (min-width: 780px) {
+   
+  .FromContainer form input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    box-shadow: 0 6px 8px rgb(0, 0, 0, 0.1);
+    font-size: 20px;
+    height: 50px;
+    width: 400px;
+  }
+  .FromContainer form button{
+    padding: 10px;
+    border: none ;
+    background-color: rgb(113, 25, 195);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    width: 93%;
+    font-size: 18px;
+    margin-top: 5px;
+
+  }
+  
+}
