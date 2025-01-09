@@ -2,7 +2,8 @@ import styles from "./TasksList.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 export default function TaskList({ SetTask, Task, SetTasks, Tasks }) {
-  const showTasks = Tasks.map((task) => {
+  const TasksSorted = Tasks.slice().sort((a,b)=> Number(a.done) - Number(b.done))
+  const showTasks = TasksSorted.map((task) => {
     let classNamVar = task.done ? styles.Complete : "";
     function handleClick(name) {
       SetTasks(
