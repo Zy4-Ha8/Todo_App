@@ -2,7 +2,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPenToSquare, faPlus } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Form.module.css";
 export default function Form({ SetTask, Task, SetTasks, Tasks }) {
-  console.log(Task, Tasks);
   return (
     <div className={styles.FromContainer}>
       <form
