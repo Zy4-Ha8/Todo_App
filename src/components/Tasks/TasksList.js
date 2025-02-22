@@ -21,7 +21,6 @@ export default function TaskList({ SetTask, Task, SetTasks, Tasks, inputRef }) {
     let classNamVar = task.done ? styles.Complete : "";
     // handle complete the Task
     function handleComplete(id) {
-      console.log(task.done);
       SetTasks(() => {
         const TaskUpdate = Tasks.map((T) =>
           T.id === id ? { ...T, done: !T.done } : T
@@ -105,7 +104,6 @@ export default function TaskList({ SetTask, Task, SetTasks, Tasks, inputRef }) {
               value={TaskEdited.name}
               onChange={(e) => {
                 setTaskEdited((prev) => ({ ...prev, name: e.target.value }));
-                console.log(TaskEdited);
               }}
               type="text"
             />

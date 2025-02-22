@@ -2,7 +2,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import styles from "../../Style/Form.module.css";
 export default function Form({ SetTask, Task, SetTasks, Tasks, inputRef }) {
-  console.log(inputRef);
   function handleSubmit(e) {
     e.preventDefault();
     if (Task.name.length > 0) {
@@ -28,7 +27,6 @@ export default function Form({ SetTask, Task, SetTasks, Tasks, inputRef }) {
               id: `${Math.floor(Math.random() * 10)}:${new Date().getTime()}`,
               update: false,
             });
-            console.log(Task);
           }}
           type="text"
           placeholder="Add Task"
