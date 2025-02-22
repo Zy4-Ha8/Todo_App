@@ -176,3 +176,6 @@
     font-size: large;
   }
 }
+.Complete {
+  text-decoration: line-through;
+}
