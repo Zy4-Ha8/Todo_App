@@ -124,7 +124,7 @@ export default function TaskList({ SetTask, Task, SetTasks, Tasks, inputRef }) {
   return (
     <>
       <div className={styles.TaskListContainer}>
-        {TaskFromLocalStorge.length == 0 && (
+        {Tasks && Tasks.length == 0 && (
           <p>Nice You don't have anything to do</p>
         )}
         {showTasks}
