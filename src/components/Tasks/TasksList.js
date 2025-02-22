@@ -101,6 +101,7 @@ export default function TaskList({ SetTask, Task, SetTasks, Tasks, inputRef }) {
         {task.update ? (
           <form onSubmit={handleEdit}>
             <input
+              required
               value={TaskEdited.name}
               onChange={(e) => {
                 setTaskEdited((prev) => ({ ...prev, name: e.target.value }));
@@ -109,14 +110,13 @@ export default function TaskList({ SetTask, Task, SetTasks, Tasks, inputRef }) {
             />
             <button>
               {" "}
-              <FontAwesomeIcon icon={faCircleCheck}  />
+              <FontAwesomeIcon icon={faCircleCheck} />
             </button>
           </form>
         ) : (
           ""
         )}
       </>
-
     );
   });
   return (
