@@ -1,6 +1,12 @@
 .headerContainer{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
     display: flex ;
-    justify-content: space-around;
+    justify-content: center;    
     align-items: center;
     background-color: rgb(113, 25, 195);
     color: white;

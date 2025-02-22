@@ -1,11 +1,9 @@
-import Body from "./components/Body";
-import Header from "./components/Header";
+import Body from "./components/Skeleton/Body";
+import Header from "./components/Skeleton/Header";
 
 function App() {
   return (
-    <div style={{
-      
-    }} className="App">
+    <div style={{position:'relative'}} className="App">
       <Header />
       <Body />
     </div>
